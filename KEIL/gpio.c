@@ -43,7 +43,7 @@ void RGBLed_Init(void){
 	GPIOD_PDDR |= (1<<BLUE_LED_PIN);
 	
 	// Stingerea LED-ului (punerea pe 0 logic)
-	GPIOD_PSOR |= (1<<BLUE_LED_PIN);
+	//GPIOD_PSOR |= (1<<BLUE_LED_PIN);
 }
 
 void ChangeColor(uint8_t red, uint8_t green, uint8_t blue)
