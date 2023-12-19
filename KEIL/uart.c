@@ -2,8 +2,8 @@
 
 void UART0_Transmit(uint8_t data)
 {
-	data = ((data & 0x01) << 7) | ((data & 0x02) << 5) | ((data & 0x04) << 3) | ((data & 0x08) << 1) |
-           ((data & 0x10) >> 1) | ((data & 0x20) >> 3) | ((data & 0x40) >> 5) | ((data & 0x80) >> 7);
+	data = (uint8_t)(((data & 0x01) << 7) | ((data & 0x02) << 5) | ((data & 0x04) << 3) | ((data & 0x08) << 1) |
+           ((data & 0x10) >> 1) | ((data & 0x20) >> 3) | ((data & 0x40) >> 5) | ((data & 0x80) >> 7));
 	
 	/*Punem in asteptare pana cand registrul de transmisie a datelor nu este gol
 	  Cat timp TDRE este setat pe 1 (buffer ul este empty) asteptam*/
@@ -17,7 +17,7 @@ uint8_t UART0_Receive(void)
 	/*Punem in asteptare pana cand registrul de receptie nu este plin
 	  Cat timp RDRF este setat pe 0 (buffer ul este empty) asteptam*/
 	
-	while(!(UART0->S1 & UART0_S1_RDRF_MASK));
+	while(!(UART0->S1 & UART0_S1_RDRF_MASK)){}
   return UART0->D;
 }
 

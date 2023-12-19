@@ -21,24 +21,29 @@ Target DLL:      CMSIS_AGDI.dll V1.33.15.0
 Dialog DLL:      TARMCM1.DLL V1.14.6.0
  
 <h2>Project:</h2>
-C:\Users\Ionut\Documents\FACULTATE\ANUL IV\SEMESTRUL I\MICROPROCESOARE\proiect\KEIL.uvprojx
+C:\Users\Ionut\Documents\FACULTATE\ANUL IV\SEMESTRUL I\MICROPROCESOARE\proiect\KEIL\KEIL.uvprojx
 Project File Date:  12/17/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
-Build target 'Target 1'
-main.c(3): warning: In file included from...
-./gpio.h(4): warning: no newline at end of file [-Wnewline-eof]
-void ChangeColor(uint8_t red, uint8_t green, uint8_t blue);
-                                                           ^
-main.c(5): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
-int main() {
-        ^
-         void
-2 warnings generated.
+Rebuild target 'Target 1'
+compiling gpio.c...
+assembling startup_MKL25Z4.s...
+compiling system_MKL25Z4.c...
+compiling Pit.c...
 compiling main.c...
+uart.c(63): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+        uint32_t osr = 15; /* Over-Sampling Rate (numarul de esantioane luate per bit-time) */
+                 ^
+1 warning generated.
+compiling uart.c...
+Adc.c(72): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+        uint16_t calibration_var = 0x0000;
+                 ^
+1 warning generated.
+compiling Adc.c...
 linking...
-Program Size: Code=2976 RO-data=272 RW-data=0 ZI-data=360  
+Program Size: Code=3892 RO-data=272 RW-data=0 ZI-data=360  
 ".\Objects\KEIL.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
@@ -66,10 +71,10 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: Keil::Device:Startup:2.5.0
-      Source file:   Device/Source/ARM/startup_MKL25Z4.s
       Source file:   Device/Source/system_MKL25Z4.c
       Include file:  Device/Source/system_MKL25Z4.h
-Build Time Elapsed:  00:00:00
+      Source file:   Device/Source/ARM/startup_MKL25Z4.s
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

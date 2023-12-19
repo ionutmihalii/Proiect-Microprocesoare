@@ -5,4 +5,4 @@
   C:\Users\Ionut\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h \
   C:\Users\Ionut\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h \
   C:\Users\Ionut\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h \
-  RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h uart.h gpio.h
+  RTE\Device\MKL25Z128xxx4\system_MKL25Z4.h gpio.h
