@@ -12,5 +12,4 @@ screenY = (screen_geometry.height() - window.height()) / 2
 window.move(screenY, screenY)
 window.show()
 
-
 app.exec()
