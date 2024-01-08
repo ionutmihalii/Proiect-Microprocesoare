@@ -29,5 +29,5 @@ Proiectul propus implică dezvoltarea unui sistem care utilizează un microcontr
 ```bash
 pip install PySide6 pyserial pyqtgraph
 ```
-2. Navigați în directorul gui și executați scriptul Python pentru a deschide interfața grafică.
+2. Navigați în directorul `gui` și executați scriptul Python pentru a deschide interfața grafică.
 3. În interfața grafică, monitorizați barplot-ul în timp real și utilizați butonul pentru controlul LED-urilor on-board.
